@@ -1,6 +1,7 @@
 <div class="lower-banner"><h1><%= @cocktail.name %></h1>
   <p><%= link_to "Back to cocktails !", cocktails_path %></p>
 </div>
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 <h4>Ingredients & doses:</h4>
 <ol>
   <p><% @cocktail.doses.each do |dose| %></p>
