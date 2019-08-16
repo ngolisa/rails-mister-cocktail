@@ -1,0 +1,9 @@
+<% @cocktails.each do |cocktail|%>
+<div class="card-product">
+  <img src="https://www.bibbyskitchenat36.com/wp-content/uploads/2017/12/Strawberry-Limoncello-mojito-cocktails_05.jpg" />
+  <div class="card-product-infos">
+    <h2><%= cocktail.name %></h2>
+    <p><%=  link_to "Details", cocktail_path(cocktail)%> </p>
+  </div>
+</div>
+<% end %>
