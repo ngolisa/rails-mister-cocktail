@@ -24,6 +24,6 @@ class CocktailsController < ApplicationController
 
   def cocktail_params
     # => Whitelisting
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end
