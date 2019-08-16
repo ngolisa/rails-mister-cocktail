@@ -20,6 +20,10 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+  end
+
   private
 
   def cocktail_params
